@@ -1,0 +1,68 @@
+2025-11-18 09:05:20,711 p=25080 u=AP n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-18 09:05:21,885 p=25080 u=AP n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 1, column 50
+
+The error appears to be in '/home/AP/UTN-FRA_SO_Examenes/202411/ansible/roles/2PRecuperatorio/tasks/main.yml': line 1, column 50, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear grupo de profesores  group:    name: GProfesores
+                                                 ^ here
+
+2025-11-18 09:10:15,851 p=25084 u=AP n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-18 09:10:17,194 p=25084 u=AP n=ansible | PLAY [localhost] *******************************************************************************************************************************************************************************
+2025-11-18 09:10:17,303 p=25084 u=AP n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2025-11-18 09:10:25,700 p=25084 u=AP n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-18 09:10:25,704 p=25084 u=AP n=ansible | ok: [localhost]
+2025-11-18 09:10:25,783 p=25084 u=AP n=ansible | TASK [2PRecuperatorio : Crear grupo de profesores] *********************************************************************************************************************************************
+2025-11-18 09:10:28,334 p=25084 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:10:28,415 p=25084 u=AP n=ansible | TASK [2PRecuperatorio : Crear grupo de alumnos] ************************************************************************************************************************************************
+2025-11-18 09:10:30,139 p=25084 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:10:30,219 p=25084 u=AP n=ansible | TASK [2PRecuperatorio : Crear usuario profesor] ************************************************************************************************************************************************
+2025-11-18 09:10:34,471 p=25084 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:10:34,553 p=25084 u=AP n=ansible | TASK [2PRecuperatorio : Crear usuario alumno] **************************************************************************************************************************************************
+2025-11-18 09:10:37,351 p=25084 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:10:37,637 p=25084 u=AP n=ansible | TASK [Cambia_Propiedad_Padilla : Cambiar propietario del Alumno] *******************************************************************************************************************************
+2025-11-18 09:10:41,168 p=25084 u=AP n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "file (/UTN/Alumno) is absent, cannot continue", "path": "/UTN/Alumno", "state": "absent"}
+2025-11-18 09:10:41,179 p=25084 u=AP n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2025-11-18 09:10:41,194 p=25084 u=AP n=ansible | localhost                  : ok=5    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-11-18 09:21:35,503 p=25384 u=AP n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-18 09:21:36,775 p=25384 u=AP n=ansible | PLAY [localhost] *******************************************************************************************************************************************************************************
+2025-11-18 09:21:36,856 p=25384 u=AP n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2025-11-18 09:21:45,881 p=25384 u=AP n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-18 09:21:45,883 p=25384 u=AP n=ansible | ok: [localhost]
+2025-11-18 09:21:45,963 p=25384 u=AP n=ansible | TASK [2PRecuperatorio : Crear grupo de profesores] *********************************************************************************************************************************************
+2025-11-18 09:21:48,509 p=25384 u=AP n=ansible | ok: [localhost]
+2025-11-18 09:21:48,580 p=25384 u=AP n=ansible | TASK [2PRecuperatorio : Crear grupo de alumnos] ************************************************************************************************************************************************
+2025-11-18 09:21:50,113 p=25384 u=AP n=ansible | ok: [localhost]
+2025-11-18 09:21:50,183 p=25384 u=AP n=ansible | TASK [2PRecuperatorio : Crear usuario profesor] ************************************************************************************************************************************************
+2025-11-18 09:21:53,387 p=25384 u=AP n=ansible | ok: [localhost]
+2025-11-18 09:21:53,466 p=25384 u=AP n=ansible | TASK [2PRecuperatorio : Crear usuario alumno] **************************************************************************************************************************************************
+2025-11-18 09:21:55,395 p=25384 u=AP n=ansible | ok: [localhost]
+2025-11-18 09:21:55,528 p=25384 u=AP n=ansible | TASK [Crea_Carpetas_Padilla : Crear carpeta UTN] ***********************************************************************************************************************************************
+2025-11-18 09:21:58,091 p=25384 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:21:58,174 p=25384 u=AP n=ansible | TASK [Crea_Carpetas_Padilla : Crear carpeta Profesor] ******************************************************************************************************************************************
+2025-11-18 09:21:59,712 p=25384 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:21:59,790 p=25384 u=AP n=ansible | TASK [Crea_Carpetas_Padilla : Crear carpeta Alumno] ********************************************************************************************************************************************
+2025-11-18 09:22:01,446 p=25384 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:22:01,585 p=25384 u=AP n=ansible | TASK [Cambia_Propiedad_Padilla : Cambiar propietario del Alumno] *******************************************************************************************************************************
+2025-11-18 09:22:03,260 p=25384 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:22:03,378 p=25384 u=AP n=ansible | TASK [Cambia_Propiedad_Padilla : Cambiar propietario de Profesor] ******************************************************************************************************************************
+2025-11-18 09:22:04,982 p=25384 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:22:05,125 p=25384 u=AP n=ansible | TASK [Sudoers_Padilla : Permitir sudo sin clave a GProfesores] *********************************************************************************************************************************
+2025-11-18 09:22:09,501 p=25384 u=AP n=ansible | changed: [localhost]
+2025-11-18 09:22:09,583 p=25384 u=AP n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2025-11-18 09:22:09,585 p=25384 u=AP n=ansible | localhost                  : ok=11   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

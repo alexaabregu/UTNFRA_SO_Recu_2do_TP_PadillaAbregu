@@ -1,0 +1,12 @@
+- name: Cambiar propietario del Alumno
+  file: 
+    path: /UTN/Alumno
+    owner: alumno
+    group: GAlumnos
+
+- name: Cambiar propietario de Profesor
+  file: 
+    path: /UTN/Profesor
+    owner: profesor
+    group: GProfesores
+

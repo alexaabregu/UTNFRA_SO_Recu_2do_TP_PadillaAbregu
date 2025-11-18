@@ -1,0 +1,15 @@
+- name: Crear carpeta UTN
+  file:
+    path: /UTN
+    state: directory
+
+- name: Crear carpeta Profesor
+  file: 
+    path: /UTN/Profesor
+    state: directory
+
+- name: Crear carpeta Alumno
+  file:
+    path: /UTN/Alumno
+    state: directory
+

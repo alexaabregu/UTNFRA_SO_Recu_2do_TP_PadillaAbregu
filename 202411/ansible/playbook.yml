@@ -1,0 +1,9 @@
+
+- hosts: localhost
+  become: yes
+  roles:
+    - 2PRecuperatorio
+    - Crea_Carpetas_Padilla
+    - Cambia_Propiedad_Padilla
+    - Sudoers_Padilla
+

@@ -1,0 +1,19 @@
+- name: Crear grupo de profesores
+  group:
+    name: GProfesores
+
+- name: Crear grupo de alumnos
+  group:
+    name: GAlumnos
+
+- name: Crear usuario profesor
+  user:
+    name: profesor
+    groups: GProfesores 
+    append: yes
+
+- name: Crear usuario alumno
+  user:
+    name: alumno
+    groups: GAlumnos
+    append: yes

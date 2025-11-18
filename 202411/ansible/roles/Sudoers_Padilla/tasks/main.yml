@@ -1,0 +1,6 @@
+
+- name: Permitir sudo sin clave a GProfesores
+  copy:
+    dest: /etc/sudoers.d/GProfesores
+    content: "GProfesores ALL=(ALL) NOPASSWD:ALL"
+    mode: '0440'
