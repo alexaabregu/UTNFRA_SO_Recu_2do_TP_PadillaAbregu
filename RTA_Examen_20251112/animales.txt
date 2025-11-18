@@ -1,0 +1,5 @@
+animal:Pato-habitat:TO
+animal:Perro-habitat:TM
+animal:Gallina-habitat:TO
+animal:Ballena-habitat:AG
+animal:Gato-habitat:TM

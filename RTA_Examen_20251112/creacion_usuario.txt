@@ -1,0 +1,14 @@
+sudo useradd -s /bin/bash -m AP
+sudo passwd AP
+AP
+AP
+sudo su
+cd /etc/sudoers.d
+cat << FIN >> AP
+AP ALL=(ALL) NOPASSWD:ALL
+FIN
+sudo chmod 440 AP
+sudo apt update
+cd
+su AP
+cd
